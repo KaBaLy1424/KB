@@ -85,6 +85,38 @@ dataLayer.push({
       }]
   }
 });
+	    
+dataLayer.push({ ecommerce2: null });  // Clear the previous ecommerce object.
+dataLayer.push({
+  event: "add_to_cart",
+  ecommerce2: {
+      transaction_id: "T_12345",
+      affiliation: "Department Subjects",
+      value: 25.42,
+      tax: 4.90,
+      shipping: 5.99,
+      currency: "USD",
+      coupon: "SUMMER_SALE",
+      items: [
+       {
+      item_id: "I100",
+      item_name: "STATISTICS",
+      affiliation: "NAAC",
+      currency: "INR",
+      discount: "152",
+      item_brand: "NIKE",
+      item_category: "CLOTHES",
+      item_category2: "SHOES",
+      item_category3: "WATCHES",
+      item_category4: "ACCESSORIES",
+      item_variant: "STATIONARY",
+      location_id: "DVNDSJVNDIO;NVLDKV,DVD",
+      price: "1000",
+      quantity:"5",
+
+      }]
+  }
+});
     </script>
 
     <title>Contact Page</title>
