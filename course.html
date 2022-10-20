@@ -63,7 +63,28 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         });
 
 	    
-
+ dataLayer.push({ ecommerce: null });  
+dataLayer.push({
+  event: "add_to_cart",
+  ecommerce: {
+      transaction_id: "A12345",
+      affiliation: "NAAC",
+      value: 100,
+      tax: 0,
+      shipping: "yes",
+      currency: "INR",
+      coupon: "SUMMER_SALE",
+      items: [
+       {
+        
+        item_name: "Python",
+        item_category: "Subject",
+        location_id: "fejn3rn3jn3rjo",
+	purchase: "Yes"
+	country: "India"
+      }]
+  }
+});
     </script>
 
     <title>Contact Page</title>
