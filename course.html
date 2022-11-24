@@ -63,10 +63,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         });
 
 	    
- dataLayer.push({ ecommerce: null });  
+ dataLayer.push({ Ecommerce: null });  
 dataLayer.push({
-  event: "purchase",
-  ecommerce: {
+  event: "Purchase",
+  Ecommerce: {
       transaction_id: "A12345",
       affiliation: "NAAC",
       value: 100,
@@ -76,12 +76,19 @@ dataLayer.push({
       coupon: "SUMMER_SALE",
       items: [
        {
-        
-        item_name: "Python",
-        item_category: "Subject",
-        location_id: "fejn3rn3jn3rjo",
-	purchase: "Yes",
-	country: "India"
+       	iten_id: "OOAAA", 
+        item_name: "Shoes",
+        affiliation: "AAA",
+	currency: "USD",
+	discount: "0.5",
+	item_brand: "spare",
+	item_category: "sneakers",
+	item_category2: "shoes",
+	item_variant: "Mens Shoes",
+        location_id: "iojomef",
+	price: "15",
+	quantity: "20",
+	
       }]
   }
 });
